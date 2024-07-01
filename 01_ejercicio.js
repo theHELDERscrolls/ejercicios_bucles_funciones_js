@@ -17,9 +17,9 @@ const characters = [
 
 const humanCharacters = [];
 
-for (const key of characters) {
-  if (key.species === "Human") {
-    humanCharacters.push(key.name);
+for (const character of characters) {
+  if (character.species === "Human") {
+    humanCharacters.push(character.name);
   }
 }
 

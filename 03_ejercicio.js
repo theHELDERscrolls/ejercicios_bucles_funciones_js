@@ -18,9 +18,9 @@ const songs = [
 ];
 const rockPlaylist = [];
 
-for (const key of songs) {
-  if (key.genre === "Rock" && key.duration > 5) {
-    rockPlaylist.push(key.title);
+for (const song of songs) {
+  if (song.genre === "Rock" && song.duration > 5) {
+    rockPlaylist.push(song.title);
   }
 }
 

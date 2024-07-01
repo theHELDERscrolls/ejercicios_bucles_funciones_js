@@ -19,11 +19,11 @@ const movies = [
 const before2k = [];
 const after2k = [];
 
-for (const key of movies) {
-  if (key.releaseYear < 2000) {
-    before2k.push(key.title);
-  } else if (key.releaseYear >= 2000) {
-    after2k.push(key.title);
+for (const movie of movies) {
+  if (movie.releaseYear < 2000) {
+    before2k.push(movie.title);
+  } else if (movie.releaseYear >= 2000) {
+    after2k.push(movie.title);
   }
 }
 
