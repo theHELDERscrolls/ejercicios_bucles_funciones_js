@@ -16,10 +16,15 @@ const tracks = [
   { title: "Stairway to Heaven", genre: "Rock" },
 ];
 
-const filteredTracks={}
+const filteredTracks = {};
 
 for (const track of tracks) {
-
-  
+  // si el género de la track no se encuentra en la lista filtrada, úsalo para crear un nuevo array.
+  if (!filteredTracks[track.genre]) {
+    filteredTracks[track.genre] = [];
+  }
+  // Añade el título del track a la lista filtrada
+  filteredTracks[track.genre].push(track.title);
 }
 
+console.log(filteredTracks);

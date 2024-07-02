@@ -17,15 +17,12 @@ const mutants = [
 ];
 
 function findMutantByPower(mutants, power) {
-  const foundMutants = mutants.filter((mutant) => mutant.power === power);
-  for (const foundMutant of foundMutants) {
-    if (foundMutant.power === power) {
-      return `The mutant ${foundMutant.name} has the ${foundMutant.power} power`;
-    } else {
-      return `There isn't any mutant with ${power} power`;
-    }
+  const foundMutant = mutants.find((mutant) => mutant.power === power);
+  if (foundMutant) {
+    return `Mutant with power ${power} found: ${foundMutant.name}`;
+  } else {
+    return `No mutant with power ${power} found.`;
   }
 }
 
-findMutantByPower(mutants, "super speed");
-console.log(findMutantByPower(mutants, "super speed"));
+console.log(findMutantByPower(mutants, "telekinesis"));

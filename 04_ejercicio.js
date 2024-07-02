@@ -19,7 +19,6 @@ const cartoons = [
 let oldestCartoon = cartoons[0].name;
 let firstDebut = cartoons[0].debut;
 
-// Recorremos el array
 for (const cartoon of cartoons) {
   // Si el elemento que estás viendo es menor que el que hemos indicado al principio...
   if (cartoon.debut < firstDebut) {
