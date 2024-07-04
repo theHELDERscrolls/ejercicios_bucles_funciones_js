@@ -16,10 +16,8 @@ const albums = [
   { title: "The Joshua Tree", genre: "Rock", duration: 50.11 },
 ];
 
-// indicamos que la duración total inicial es de 0.
 let totalRockDuration = 0;
 
-// Recorremos el array.
 for (const album of albums) {
   // Si el género del álbum es estrictamente igual que "Rock"...
   if (album.genre === "Rock") {
@@ -28,6 +26,4 @@ for (const album of albums) {
   }
 }
 
-console.log(
-  "La duración total de todos los álbumes de rock es: " + totalRockDuration
-);
+console.log(`Vas a disfrutar de ${totalRockDuration} minutos de buena música`);

@@ -16,6 +16,7 @@ const songs = [
   { title: "Thunderstruck", genre: "Rock", duration: 4.52 },
   { title: "Crazy Love", genre: "Pop", duration: 3.52 },
 ];
+
 const rockPlaylist = [];
 
 for (const song of songs) {
@@ -24,4 +25,4 @@ for (const song of songs) {
   }
 }
 
-console.log("Best Rock ever: " + rockPlaylist);
+console.log("Don't listen to reggaeton. This is better: " + rockPlaylist);

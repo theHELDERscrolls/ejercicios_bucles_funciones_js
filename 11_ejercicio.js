@@ -18,11 +18,9 @@ const movies = [
 
 function averageMovieDuration(movies) {
   let totalDuration = 0;
-  // Sumamos a la variable totalDuration el valor de cada duration de cada objeto.
   for (const movie of movies) {
     totalDuration += movie.duration;
   }
-  // Retornamos la suma total dividido entre el nº total de películas (objetos).
   return totalDuration / movies.length;
 }
 

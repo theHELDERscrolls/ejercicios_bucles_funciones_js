@@ -22,9 +22,7 @@ const artists = [
   },
 ];
 
-// 1º recorremos el array de objetos inicial.
 for (const artist of artists) {
-  // 2º recorremos el array dentro de cada objeto
   for (const influence of artist.influences) {
     console.log(
       `El artista ${artist.name} ha tenido influencia de ${influence}`

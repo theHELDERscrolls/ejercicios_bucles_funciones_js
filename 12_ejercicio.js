@@ -17,11 +17,13 @@ const mutants = [
 ];
 
 function findMutantByPower(mutants, power) {
-  const foundMutant = mutants.find((mutant) => mutant.power === power);
-  if (foundMutant) {
-    return `Mutant with power ${power} found: ${foundMutant.name}`;
+  const foundMutants = mutants.filter((mutant) => mutant.power === power);
+
+  if (foundMutants.length > 0) {
+    const mutantNames = foundMutants.map((mutant) => mutant.name);
+    return `Mutants with ${power} power found: ${mutantNames}`;
   } else {
-    return `No mutant with power ${power} found.`;
+    return `There isn't any mutant with ${power} power.`;
   }
 }
 

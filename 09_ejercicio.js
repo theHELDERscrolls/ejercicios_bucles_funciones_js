@@ -24,8 +24,8 @@ function findOldestXMen(xMen) {
       oldestXMen = xMan;
     }
   }
-  return oldestXMen;
+  return oldestXMen.name;
 }
 
 findOldestXMen(xMen);
-console.log(findOldestXMen(xMen));
+console.log("The oldest X-Men is: " + findOldestXMen(xMen));
